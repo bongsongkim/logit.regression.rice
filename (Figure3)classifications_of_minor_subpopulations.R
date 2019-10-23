@@ -64,7 +64,7 @@ phen7 <- dat4$Protein.content
 
 logit.res <- logit(phen1,phen2,phen3,phen4,phen5,phen6,phen7)
 
-res.tab1 <- cbind(as.character(dat3[,4]),logit.res)[which(is.na(logit.res) == FALSE),]
+res.tab1 <- cbind(as.character(dat4[,4]),logit.res)[which(is.na(logit.res) == FALSE),]
 res.tab2 <- res.tab1[which(as.numeric(res.tab1[,2]) < .5),]
 res.tab3 <- res.tab1[which(as.numeric(res.tab1[,2]) > .5),]
 
@@ -85,7 +85,7 @@ phen7 <- dat5$Protein.content
 
 logit.res <- logit(phen1,phen2,phen3,phen4,phen5,phen6,phen7)
 
-res.tab1 <- cbind(as.character(dat3[,4]),logit.res)[which(is.na(logit.res) == FALSE),]
+res.tab1 <- cbind(as.character(dat5[,4]),logit.res)[which(is.na(logit.res) == FALSE),]
 res.tab2 <- res.tab1[which(as.numeric(res.tab1[,2]) < .5),]
 res.tab3 <- res.tab1[which(as.numeric(res.tab1[,2]) > .5),]
 
