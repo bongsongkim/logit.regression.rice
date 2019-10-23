@@ -47,7 +47,7 @@ res.tab1 <- cbind(as.character(dat3[,4]),logit.res)[which(is.na(logit.res) == FA
 res.tab2 <- res.tab1[which(as.numeric(res.tab1[,2]) < .5),]
 res.tab3 <- res.tab1[which(as.numeric(res.tab1[,2]) > .5),]
 
-plot(sort(as.numeric(res.tab1[,2])),col="red",pch=20,ylab="indica < 0.5 < japonica", main="Aus")
+plot(sort(as.numeric(res.tab1[,2])),col="red",pch=20,ylab="indica < 0.5 < japonica", main="Aus",cex=1.5,cex.main=1.7,xlab="",cex.lab=1.4)
 abline(h=0.5)
 
 
@@ -68,7 +68,7 @@ res.tab1 <- cbind(as.character(dat4[,4]),logit.res)[which(is.na(logit.res) == FA
 res.tab2 <- res.tab1[which(as.numeric(res.tab1[,2]) < .5),]
 res.tab3 <- res.tab1[which(as.numeric(res.tab1[,2]) > .5),]
 
-plot(sort(as.numeric(res.tab1[,2])),col="red",pch=20,ylab="indica < 0.5 < japonica", main="Admixed")
+plot(sort(as.numeric(res.tab1[,2])),col="red",pch=20,ylab="indica < 0.5 < japonica", main="Admixed",cex=1.5,cex.main=1.7,xlab="",cex.lab=1.4)
 abline(h=0.5)
 
 
@@ -89,5 +89,5 @@ res.tab1 <- cbind(as.character(dat5[,4]),logit.res)[which(is.na(logit.res) == FA
 res.tab2 <- res.tab1[which(as.numeric(res.tab1[,2]) < .5),]
 res.tab3 <- res.tab1[which(as.numeric(res.tab1[,2]) > .5),]
 
-plot(sort(as.numeric(res.tab1[,2])),col="red",pch=20,ylab="indica < 0.5 < japonica", main="Aromatic")
+plot(sort(as.numeric(res.tab1[,2])),col="red",pch=20,ylab="indica < 0.5 < japonica", main="Aromatic",cex=1.5,cex.main=1.7,xlab="",cex.lab=1.4)
 abline(h=0.5)
